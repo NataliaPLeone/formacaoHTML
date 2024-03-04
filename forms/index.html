@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form name="signup" method="POST" onsubmit="alert('formulário enviado com sucesso');" action="#">
+        <!-- action = pra onde vai/ pra qual site vai/ eu n posso mandar pra um site que euu n sou dono, então pode dar problema?-->
+        <!--method:-->
+        <!-- sem o método post, não é seguro, pois aí a senha pode ser visível-->
+        <!--target="_blank"= a informação n sai da sua frente, ela vai por outra fonte-->
+        <!-- autocomplete off == pagina recarregada = forms apagado-->
+        <!-- onsubmit = muito usado para ajudar em alertas de validação de inputs-->
+        Nome: <input type="text" name="name"/><br>
+        Idade: <input type="number" name="age"/><br>
+        Senha: <input type="password" name="password"/><br>
+        <button type="submit">Enviar</button><br>
+        Range: <input type="range" name="range" min="0" max="100" value="50"/><br>
+        Color: <input type="color" name="color"/><br>
+        Email: <input type="email" name="email"/><br>
+        Checkbox: <input type="checkbox" name="Checkbox"/><br>
+        radio: <input type="radio" name="radio"/><br>
+        Url: <input type="url" name="url"/><br>
+        Date: <input type="date" name="date"/><br>
+        Week: <input type="week" name="week"/><br><!--não funciona no firefox-->
+        Hidden: <input type="hidden" name="hidden"/><br>
+        File: <input type="file" name="file"/><br>
+        Search: <input type="search" name="search"/><br><!--não funciona no firefox-->
+
+        <!-- tags específicas == tenha cuidado com a compatibilidade-->
+    </form>
+</body>
+</html>
